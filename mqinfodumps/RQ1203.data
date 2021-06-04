@@ -1,0 +1,50 @@
+5724-H72 (C) Copyright IBM Corp. 1994, 2016.
+Starting MQSC for queue manager RQ1103.
+
+
+     1 : DISPLAY QMGR ALL
+AMQ8408: Display Queue Manager details.
+   QMNAME(RQ1103)                          ACCTCONO(DISABLED)
+   ACCTINT(1800)                           ACCTMQI(OFF)
+   ACCTQ(OFF)                              ACTIVREC(MSG)
+   ACTVCONO(DISABLED)                      ACTVTRC(OFF)
+   TRIGINT(999999999)                      VERSION(09000010)
+   MAXMSGL(104857600)                      MAXPROPL(NOLIMIT)
+   XRCAP(NO)                            
+     2 : DISPLAY Q(*) ALL CLUSINFO
+AMQ8409: Display Queue details.
+   QUEUE(AMPS.EDI.ENTERPRISE)              TYPE(QLOCAL)
+   ACCTQ(QMGR)                             ALTDATE(2020-04-29)
+   ALTTIME(07.36.21)                       BOQNAME( )
+   BOTHRESH(0)                             CLUSNL( )
+   CLUSTER( )                              CLCHNAME( )
+   TRIGTYPE(FIRST)                         USAGE(NORMAL)
+AMQ8409: Display Queue details.
+   QUEUE(AMPS.EDI.ENTERPRISE.BACKOUT)      TYPE(QLOCAL)
+   ACCTQ(QMGR)                             ALTDATE(2020-04-29)
+   ALTTIME(07.36.21)                       BOQNAME( )
+   BOTHRESH(0)                             CLUSNL( )
+   TRIGTYPE(FIRST)                         USAGE(NORMAL)
+AMQ8409: Display Queue details.
+   QUEUE(AMPS.EDI.ENTERPRISE.EVENT)        TYPE(QALIAS)
+   ALTDATE(2020-04-29)                     ALTTIME(07.36.21)
+   TARGET(AMPS.EDI.ENTERPRISE)             CLUSNL( )
+   CLUSTER( )                              CLWLPRTY(0)
+   CLWLRANK(0)                             CUSTOM( )
+   TARGTYPE(QUEUE)                      
+AMQ8409: Display Queue details.
+   QUEUE(AMPS.WO.DATA.REPLY)               TYPE(QLOCAL)
+   ACCTQ(QMGR)                             ALTDATE(2020-04-28)
+   ALTTIME(09.20.41)                       BOQNAME( )
+   TRIGTYPE(FIRST)                         USAGE(NORMAL)
+     3 : DISPLAY CHL(*) ALL
+AMQ8414: Display Channel details.
+   CHANNEL(CCASP.RQ1103)                   CHLTYPE(SVRCONN)
+   ALTDATE(2020-06-17)                     ALTTIME(09.36.19)
+   CERTLABL( )                             COMPHDR(NONE)
+   TRPTYPE(TCP)                         
+AMQ8414: Display Channel details.
+   CHANNEL(CCASP.RQ1103.SEC)               CHLTYPE(SVRCONN)
+   ALTDATE(2020-09-08)                     ALTTIME(07.23.58)
+   CERTLABL( )                             COMPHDR(NONE)
+   SSLPEER( )                              TRPTYPE(TCP)

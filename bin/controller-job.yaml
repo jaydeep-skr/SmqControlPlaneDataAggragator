@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: smq-control
+spec:
+  backoffLimit: 1
+  template:
+    spec:
+      containers:
+      - image: crsmq.azurecr.io/smq/smqcontroller:v11
+        name: smq-control
+        volumeMounts:
+          - name: azure
+            mountPath: /home/AzureUser
+      imagePullSecrets:
+      - name: acrpull
+      volumes:
+      - name: azure
+        azureFile:
+          secretName: azure-secret
+          shareName: smqfilestore
+          readOnly: false
+      restartPolicy: Never
