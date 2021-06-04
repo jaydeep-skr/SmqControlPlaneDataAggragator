@@ -17,6 +17,7 @@
 2. Create the directory structre as below.
 > IIB/PP
 
+
 > IIB/PP/iiblogs
 
 >IIB/PP/json/
