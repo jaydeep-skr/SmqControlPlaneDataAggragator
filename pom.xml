@@ -15,7 +15,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.release>${java.version}</maven.compiler.release>
 
-    <jacksonVersion>2.11.2</jacksonVersion>
+    <jacksonVersion>2.12.7.1</jacksonVersion>
 
     <!-- Plugin versions -->
     <maven.shade>3.2.2</maven.shade>
